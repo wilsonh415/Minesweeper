@@ -41,7 +41,7 @@ public void setBombs()
     {
         bombs.add(buttons[yBomb][xBomb]);
     }
-    (xBomb+", "+yBomb);
+    System.out.println(xBomb+", "+yBomb);
 }
 
 public void draw ()
@@ -58,8 +58,6 @@ public boolean isWon()
 public void displayLosingMessage()
 {
     //your code here
-    buttons[9][10] = "G";
-    buttons[10][10] = "G";
     textSize(15);
     fill(0,255,0);
     text("GG", 200,200);
